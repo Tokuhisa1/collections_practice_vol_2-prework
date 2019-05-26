@@ -61,4 +61,3 @@ def merge_data(first_names, details)
   end
   merge
 end
-
