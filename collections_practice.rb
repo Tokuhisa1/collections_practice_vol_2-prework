@@ -43,7 +43,7 @@ end
 
 def count_elements(elements)
   count = []
-  
+
   elements.uniq.each do |element|
     count.push(element)
     element[:count] = elements.count(element)
