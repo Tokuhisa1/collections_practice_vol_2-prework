@@ -49,3 +49,15 @@ def count_elements(elements)
     element[:count] = elements.count(element)
   end
 end
+
+def merge_data(keys, data)
+  merge = []
+  for key in keys
+    details = key
+    data[0][key[:first_name]].each do |key2, value2|
+      details[key2] = value2
+    end
+    merge.push(details)
+  end
+  merge
+end
