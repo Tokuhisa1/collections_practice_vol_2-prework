@@ -73,3 +73,17 @@ def find_cool(people)
 
   found
 end
+
+def organize_schools(schools)
+  organized = {}
+
+  schools.each do |key, value|
+    if !organized.key?(value[:location])
+      organized[value[:location]] = []
+    end
+
+    organized[value[:location]].push(key)
+  end
+
+  organized
+end
